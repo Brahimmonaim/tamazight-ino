@@ -1,0 +1,6 @@
+{
+  "name": "Tamazight for Beginners",
+  "description": "An interactive, clean, and responsive application for children and beginners to learn Tamazight Tifinagh across seven key sections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

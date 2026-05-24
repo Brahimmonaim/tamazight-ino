@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #fdfbf7;
+  color: #2c2520;
+  font-family: var(--font-sans);
+}
+
+/* Custom whimsical styles for learning app */
+.cartoon-cloud {
+  position: absolute;
+  background: white;
+  border-radius: 100px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.04));
+  opacity: 0.85;
+}
+
+.cartoon-cloud::before, .cartoon-cloud::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Custom bouncing animations */
+@keyframes slow-bob {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes slow-spin-sunny {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bob {
+  animation: slow-bob 4s ease-in-out infinite;
+}
+
+.animate-spin-sunny {
+  animation: slow-spin-sunny 20s linear infinite;
+}
+
